@@ -14,7 +14,7 @@
 <div class="p-8 bg-gray-100">
 <img src="https://cdn.jsdelivr.net/gh/fruitfulunction/aboutandychang.design@main/Untitled%20design.png" class="w-full">
 <br>
-<p class="font-mono text-5xl mx-8 pb-2.5">Hello,</p>
+<p class="font-mono text-5xl mx-8 pb-2.5" id="hello">Hello,</p>
 <div>
 <p class="text-justify italic mx-8">My name is Andy, and I like to make websites. I made a lot of websites and this website is one of them! To list every website I've built can take up a whole page, so I picked few of them that are good enough to show.</p></div>
 </div>
@@ -45,6 +45,18 @@
 <p class="font-mono text-center text-white">Secured by <b><i><a href="https://www.fruitfulunctioncloud.com/security/#a22" target="_blank">Fruitfulunction Cloud Security A-22</a></i></b>
 </div>
 
+<script>
+var switcher = ["Hello," , "Hola," , "こんにちは。" , "Здравейте," , "你好。" , "Dobrý den," ,  "Hej," , "Hallo,"];
+var counter = 0;
+var element = document.getElementById("hello");
+var variable = setInterval(mySwitcher, 1000);
+
+function mySwitcher() {
+element.innerHTML = switcher[counter%8]
+counter++
+}
+
+</script>
 
 </body>
 </html>
